@@ -1,0 +1,168 @@
+repo_name: 2lambda123/anonymous-zether
+report_id: fe948e97f61d663ab34302c30b4dd9ac
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-09T07:56:01+00:00'
+requested_by: antonydenyer
+provider: github
+branch: master
+detected_tools_count: 13
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/2lambda123/anonymous-zether
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/packages/anonymous.js/package.json
+  detection_source: packages/anonymous.js/package.json
+  last_updated_by: stuarth1
+  last_updated_on: 2019-05-15 17:30:54.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether
+  detection_source: Repo Metadata
+- name: TRUFFLE
+  description: 'A development environment for Ethereum '
+  website_url: https://www.trufflesuite.com/truffle
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Integrated Development Environment
+  image_url: https://img.stackshare.io/service/8417/gMnhPuhq_400x400.jpg
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/packages/protocol/package.json
+  detection_source: packages/protocol/package.json
+  last_updated_by: stuarth1
+  last_updated_on: 2019-05-15 17:30:54.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: stuarth1
+  last_updated_on: 2019-05-15 17:30:54.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/packages/anonymous.js/package.json
+  detection_source: packages/anonymous.js/package.json
+  last_updated_by: stuarth1
+  last_updated_on: 2019-05-15 17:30:54.000000000 Z
+- name: Lerna
+  description: A tool for managing JavaScript projects
+  website_url: https://lerna.js.org/
+  version: 3.14.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/6207/OwqAUSQi_400x400.jpg
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: stuarth1
+  last_updated_on: 2019-05-15 20:34:22.000000000 Z
+- name: solidity
+  description: How people build software
+  website_url: https://ethereum.github.io/solidity/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4959/1__IS8pZzkhvd6kUbSFpSgag.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether
+  detection_source: Repo Metadata
+- name: web3
+  website_url: https://github.com/ethereum/web3.js/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8418/no-img-open-source.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Nicolae Leonte
+  last_updated_on: 2022-08-18 11:12:16.000000000 Z
+- name: bn.js
+  description: Big number implementation in pure javascript
+  package_url: https://www.npmjs.com/bn.js
+  version: 4.11.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16585/default_f7592cb347fae67ce7c7f221ddd5fd2cb0afc28f.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Benjamin Diamond
+  last_updated_on: 2019-12-23 17:46:24.000000000 Z
+- name: elliptic
+  description: EC cryptography
+  package_url: https://www.npmjs.com/elliptic
+  version: 6.5.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16878/default_9a6b7a8dd0c513232652c0823a0be4346af570d1.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Benjamin Diamond
+  last_updated_on: 2019-11-24 20:06:16.000000000 Z
+- name: web3
+  description: Ethereum JavaScript API
+  package_url: https://www.npmjs.com/web3
+  version: 1.7.4
+  license: LGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16369/default_17385ab3aa01d4c295c08d4a9736140df691c5e9.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Nicolae Leonte
+  last_updated_on: 2022-08-18 11:12:16.000000000 Z
+- name: web3-utils
+  description: Collection of utility functions used in web3.js
+  package_url: https://www.npmjs.com/web3-utils
+  version: 1.7.4
+  license: LGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17507/default_8d32936cb624bf7f51657c1540463db0a3c4106e.png
+  detection_source_url: https://github.com/2lambda123/anonymous-zether/blob/master/yarn.lock
+  detection_source: packages/anonymous.js/package.json
+  last_updated_by: Nicolae Leonte
+  last_updated_on: 2022-08-18 11:12:16.000000000 Z
