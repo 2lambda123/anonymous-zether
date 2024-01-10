@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: Apache License 2.0
-pragma solidity ^0.7.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 contract Migrations {
     address public owner;
@@ -13,7 +13,7 @@ contract Migrations {
 
     constructor() {
         owner = msg.sender;
-    }
+    };
 
     // A function with the signature `setCompleted(uint)` is required.
     function setCompleted(uint completed) public restricted {
