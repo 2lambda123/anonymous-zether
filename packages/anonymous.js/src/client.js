@@ -6,7 +6,12 @@ const { ElGamal } = require('./utils/algebra.js');
 const Service = require('./utils/service.js');
 const bn128 = require('./utils/bn128.js');
 
-const sleep = (wait) => new Promise((resolve) => { setTimeout(resolve, wait); });
+const sleep = (wait) => {
+  if (typeof wait !== 'number' || wait <= 0) {
+    throw new Error('Invalid wait argument. Please provide a positive number for wait.');
+  }
+  return new Promise((resolve) => { setTimeout(resolve, wait); });
+};
 
 class Client {
     constructor(web3, zsc, home) {
@@ -17,7 +22,14 @@ class Client {
         if (home === undefined)
             throw "Constructor's third argument should be the address of an unlocked Ethereum account.";
 
-        web3.transactionConfirmationBlocks = 1;
+        if (!web3)
+    throw new Error("Constructor's first argument should be an initialized Web3 object.");
+if (!zsc)
+    throw new Error("Constructor's second argument should be a deployed ZSC contract object.");
+if (!home)
+    throw new Error("Constructor's third argument should be the address of an unlocked Ethereum account.");
+
+web3.transactionConfirmationBlocks = 1;
         const that = this;
 
         const transfers = new Set();
@@ -38,7 +50,6 @@ class Client {
             // this function should hopefully give you good epoch lengths also for 8, 16, 32, etc... if you have very heavy traffic, may need to bump it up (many verifications)
             // i calibrated this on _my machine_. if you are getting transfer failures, you might need to bump up the constants, recalibrate yourself, etc.
             return Math.ceil(size * Math.log(size) / Math.log(2) * 20 + 5200) + (contract ? 20 : 0);
-            // the 20-millisecond buffer is designed to give the callback time to fire (see below).
         };
 
         zsc.events.TransferOccurred({}) // i guess this will just filter for "from here on out."
@@ -104,7 +115,12 @@ class Client {
             };
 
             this.balance = () => this._state.available + this._state.pending;
-            this.public = () => bn128.serialize(this.keypair['y']);
+            this.public = () => {
+    if (!this.keypair || !this.keypair['y']) {
+        throw new Error('Public key is not defined.');
+    }
+    return bn128.serialize(this.keypair['y']);
+}
             this.secret = () => "0x" + this.keypair['x'].toString(16, 64);
         };
 
@@ -126,6 +142,9 @@ class Client {
         };
 
         this.register = (secret) => {
+    if (typeof secret !== 'string' || secret === '') {
+        throw new Error('Invalid secret argument. Please provide a non-empty string for secret.');
+    }
             return Promise.all([zsc.methods.epochLength().call(), zsc.methods.fee().call()]).then((result) => {
                 epochLength = parseInt(result[0]);
                 fee = parseInt(result[1]);
@@ -161,6 +180,9 @@ class Client {
         };
 
         this.deposit = (value) => {
+    if (typeof value !== 'number' || value <= 0) {
+      throw new Error('Invalid value argument. Please provide a positive number for value.');
+    }
             if (this.account.keypair === undefined)
                 throw "Client's account is not yet registered!";
             const account = this.account;
@@ -183,7 +205,19 @@ class Client {
             });
         };
 
-        this.transfer = (name, value, decoys, beneficiary) => { // todo: make sure the beneficiary is registered.
+        this.transfer = (name, value, decoys, beneficiary) => {
+    if (typeof name !== 'string' || name === '') {
+        throw new Error('Invalid name argument. Please provide a non-empty string for name.');
+    }
+    if (typeof value !== 'number' || value <= 0) {
+        throw new Error('Invalid value argument. Please provide a positive number for value.');
+    }
+    if (!Array.isArray(decoys)) {
+        throw new Error('Invalid decoys argument. Please provide an array of decoys.');
+    }
+    if (beneficiary && (typeof beneficiary !== 'string' || beneficiary === '')) {
+        throw new Error('Invalid beneficiary argument. Please provide a non-empty string for beneficiary.');
+    } // todo: make sure the beneficiary is registered.
             if (this.account.keypair === undefined)
                 throw "Client's account is not yet registered!";
             decoys = decoys ? decoys : [];
