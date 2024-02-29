@@ -2,7 +2,7 @@ repo_name: 2lambda123/anonymous-zether
 report_id: fe948e97f61d663ab34302c30b4dd9ac
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-09T07:56:01+00:00'
+timestamp: '2024-02-29T19:13:12+00:00'
 requested_by: antonydenyer
 provider: github
 branch: master
@@ -43,7 +43,7 @@ tools:
   detection_source_url: https://github.com/2lambda123/anonymous-zether
   detection_source: Repo Metadata
 - name: TRUFFLE
-  description: 'A development environment for Ethereum '
+  description: A development environment for Ethereum
   website_url: https://www.trufflesuite.com/truffle
   license: MIT
   open_source: true
