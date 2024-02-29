@@ -5,9 +5,9 @@
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - [ESLint](http://eslint.org/) – Code Review
+- [TRUFFLE](https://www.trufflesuite.com/truffle) – Integrated Development Environment
 - [Yarn](https://yarnpkg.com/) – Front End Package Manager
 - [Lerna](https://lerna.js.org/) – Javascript Utilities & Libraries
-- [TRUFFLE](https://www.trufflesuite.com/truffle) – Integrated Development Environment
 
 Full tech stack [here](/techstack.md)
 
@@ -19,9 +19,9 @@ Full tech stack [here](/techstack.md)
 
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/3337/Q4L7Jncy.jpg' alt='ESLint'/> [ESLint](http://eslint.org/) – Code Review
+- <img width='25' height='25' src='https://img.stackshare.io/service/8417/gMnhPuhq_400x400.jpg' alt='TRUFFLE'/> [TRUFFLE](https://www.trufflesuite.com/truffle) – Integrated Development Environment
 - <img width='25' height='25' src='https://img.stackshare.io/service/5848/44mC-kJ3.jpg' alt='Yarn'/> [Yarn](https://yarnpkg.com/) – Front End Package Manager
 - <img width='25' height='25' src='https://img.stackshare.io/service/6207/OwqAUSQi_400x400.jpg' alt='Lerna'/> [Lerna](https://lerna.js.org/) – Javascript Utilities & Libraries
-- <img width='25' height='25' src='https://img.stackshare.io/service/8417/gMnhPuhq_400x400.jpg' alt='TRUFFLE'/> [TRUFFLE](https://www.trufflesuite.com/truffle) – Integrated Development Environment
 
 Full tech stack [here](/techstack.md)
 
@@ -32,7 +32,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [2lambda123/anonymous-zether](https://github.com/2lambda123/anonymous-zether)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|13<br/>Tools used|01/09/24 <br/>Report generated|
+|13<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
