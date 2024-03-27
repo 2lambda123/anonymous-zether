@@ -11,7 +11,7 @@
     "web3": "^1.7.4"
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "4.9.3",
+    "@openzeppelin/contracts": "4.9.6",
     "eslint": "^5.16.0"
   }
 }
