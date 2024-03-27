@@ -8,7 +8,7 @@
     "elliptic": "^6.5.1",
     "web3": "^1.7.4",
     "web3-eth-abi": "^1.7.4",
-    "web3-utils": "^1.7.4"
+    "web3-utils": "^4.2.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0"
